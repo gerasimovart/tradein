@@ -1,3 +1,17 @@
+html{
+    scroll-behavior: smooth;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #aaa;
+    text-indent: 0px;
+    transition: 0.35s;
+}
+  
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{
+    font-size: 0px;
+}
+
 .dark-screen{
     position: fixed;
     top: 0;

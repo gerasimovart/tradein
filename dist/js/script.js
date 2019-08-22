@@ -35,6 +35,7 @@ function openWin(){
     if(elem.classList.contains('hide')){
         elem.classList.remove('hide');
         elem.classList.add('show');
+        document.body.style.overflow = 'hidden';
     }
 }
 
@@ -42,6 +43,7 @@ function closeWin(){
     if(elem.classList.contains('show')){
         elem.classList.remove('show');
         elem.classList.add('hide');
+        document.body.style.overflow = '';
     }
 }
 
@@ -53,7 +55,7 @@ for(let i = 0; i < offerArrow.length; i++){
     offerBtn[i].addEventListener('click', openWin);
 }
 
-console.log(siteArrow);
+
 for(let i = 0; i < siteArrow.length; i++){
 
     siteArrow[i].addEventListener('click', openWin);
