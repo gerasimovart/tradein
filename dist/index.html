@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-    <section class="header">
+    <section class="header" itemscope itemtype="https://schema.org/WPHeader">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title wow fadeIn" data-wow-delay = "0.2s">
-                        <h1>Наши сайты заставляют работать ваш бизнес</h1>
-                        <p>
+                        <h1 itemprop="headline">Наши сайты заставляют работать ваш бизнес</h1>
+                        <p itemprop="description">
 							Большинство веб-студий считают окончанием работы загрузку 
                             сайта в интернет. Но почти никто не умеет делать проекты,
                             которые работают и приносят прибыль
@@ -53,17 +53,17 @@
             </div>
         </div>
     </section>
-    <nav class="menu wow fadeInUp">
+    <nav class="menu wow fadeInUp" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <div class="container">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-4 ">
                             <nav class="wrap">
                                 <ul class="d-flex justify-content-between">
-                                    <li><a href="#studio">Главная</a></li>
-                                    <li><a href="#creed">О нас</a></li>
-                                    <li><a href="#development">Услуги</a></li>
-                                    <li><a href="#trade-in">Trade-in</a></li>
-                                    <li><a href="#feedback">Контакты</a></li>
+                                    <li><a itemprop="url" href="#studio">Главная</a></li>
+                                    <li><a itemprop="url" href="#creed">О нас</a></li>
+                                    <li><a itemprop="url" href="#development">Услуги</a></li>
+                                    <li><a itemprop="url" href="#trade-in">Trade-in</a></li>
+                                    <li><a itemprop="url" href="#feedback">Контакты</a></li>
                                </ul>
                             </nav>
                             <div class="drop-menu">
@@ -98,10 +98,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-12">
-                    <div class="offer wow fadeInUp" data-wow-delay = "0.2s">
+                    <div class="offer wow fadeInUp" itemscope itemtype="https://schema.org/Offer" data-wow-delay = "0.2s">
                         <img src="img/Offer-icons/icon-1_active.png" alt="Ракета">
-                        <h4>Старт</h4>
-                        <p>
+                        <h4 itemprop="name">Старт</h4>
+                        <p itemprop="description">
                             Вы хотите получать больше клиентов 
                             и прибыли из интернета? С нуля разработаем 
                             сайт любой сложности,учитывая индивидуальные
@@ -111,7 +111,7 @@
                             требований клиента
                         </p>
                         <div class="active-offer-btn">
-                            <button>от 5000 руб</button>
+                            <button>от <span itemprop="price">5000 </span><span itemprop="priceCurrency">RUB</span></button>
                             <div class="right-arrow"></div>
                         </div>
                     </div>
